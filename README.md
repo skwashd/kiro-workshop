@@ -2,6 +2,11 @@
 
 A minimalist timing game. A glowing pulse ring expands and contracts from the center of a circular arena. Colored target rings appear at random radii and fade over time. **Click, tap, or press Space** when the pulse aligns with a target ring to score.
 
+New players can choose **Try the guided demo** (or **How to play**) for a short,
+consequence-free practice round. It introduces the moving pulse, target
+alignment, timing feedback, and streaks before offering a real round. Demo
+results are never submitted to the high-score table.
+
 ## How scoring works
 
 Each hit earns **10–100 points** based on timing accuracy — the closer the pulse is to the target ring's exact radius, the higher the score. Accuracy is calculated as the proportion of the tolerance window you used:
@@ -22,7 +27,7 @@ Requires **Node.js 18+**.
 
 ```bash
 npm install --production
-node server.js
+npm start
 ```
 
 The server listens on `127.0.0.1` at the port set by the `PORT` environment variable (default `3000`). The start command stays in the foreground.
